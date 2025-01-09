@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <tittle></tittle>
+    </head>
+    <body>
+        <h1>Weather application</h1>
+        <button id="getclick">check weather </button>
+        <p id="temp">To Know the Weather update</p>
+        <script>
+            id='';
+            temp=document.getElementById('temp');
+        
+            CheckWeather=document.getElementById('getclick');
+            CheckWeather. addEventListener('click',()=>{
+                if('geo' in navigator){
+                navigator.geolocation.getcurrentposition( (Position) =>{
+                    latitude,longitude = position.coords;
+
+                localstorage.setItem('latitude',latitude);
+
+                localstorage.setItem('longitude',longitude);
+
+                url =""
+                
+
+
+
+                })
+
+
+                }
+
+            })
+        </script>
+    </body>
+</html>

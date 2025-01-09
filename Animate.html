@@ -1,0 +1,46 @@
+<head>
+    <title>Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e1e4ea;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .glow {
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color: #ab1414;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 5px #ab1414;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            animation: glow-animation 1.5s infinite alternate;
+        }
+
+        .glow:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 25px #ab1414, 0 0 50px #ab1414;
+        }
+
+        @keyframes glow-animation {
+            from {
+                box-shadow: 0 0 10px #ab1414, 0 0 20px #ab1414;
+            }
+            to {
+                box-shadow: 0 0 20px #ab1414, 0 0 40px #ab1414;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="glow">Click Here!...</button>
+</body>
